@@ -1,0 +1,12 @@
+import React from 'react'
+import { TodoListItem } from './TodoListItem'
+
+export const TodoList = ({todos, handleDelete, handleToggle}) => {
+    return (
+        <div>
+            <ul className="list-group list-group-flush">
+                <TodoListItem todos={todos}  handleDelete={handleDelete} handleToggle={handleToggle}/>
+            </ul>
+        </div>
+    )
+}
